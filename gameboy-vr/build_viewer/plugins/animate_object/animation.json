@@ -1,0 +1,11 @@
+{
+  "camera":[{"object_name":"object_1_anim_1", "time": 0.0},
+              {"object_name":"object_1_anim_2", "time": 2.0},
+              {"object_name":"object_1_anim_3", "time": 10.0}
+          ],
+
+  "object_2":[{"object_name":"object_2_anim_1", "time": 0.0},
+              {"object_name":"object_2_anim_2", "time": 2.0},
+              {"object_name":"object_2_anim_3", "time": 20.0}
+          ]
+}

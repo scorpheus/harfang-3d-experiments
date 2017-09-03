@@ -1,0 +1,6 @@
+{
+  "floor": {
+    "index" : 0,
+    "diffuse_map": ["books_diffuse.tga", "sky_03.jpg"]
+  }
+}

@@ -1,0 +1,283 @@
+{
+	"Scene": {
+		"Components": {
+			"gs::core::Environment": {
+				"FogColor": {
+					"r": 1.0,
+					"g": 1.0,
+					"b": 1.0
+				}
+			}
+		},
+		"Nodes": {
+			"Node": {
+				"Uid": 1,
+				"Name": "gameboy_back",
+				"Components": {
+					"gs::core::Transform": {
+						"Position": {
+							"x": 0.0,
+							"y": 0.0097,
+							"z": 0.0
+						},
+						"Rotation": {
+							"x": 0.0,
+							"y": 0.0,
+							"z": 0.0
+						}
+					},
+					"gs::core::Object": {
+						"Geometry": "export/gameboy_back.geo"
+					}
+				}
+			},
+			"Node": {
+				"Uid": 2,
+				"Name": "gameboy_front",
+				"Components": {
+					"gs::core::Transform": {
+						"Position": {
+							"x": 0.0,
+							"y": 0.017,
+							"z": 0.0001
+						}
+					},
+					"gs::core::Object": {
+						"Geometry": "export/gameboy_front.geo"
+					}
+				}
+			},
+			"Node": {
+				"Uid": 3,
+				"Name": "screen_glass",
+				"Components": {
+					"gs::core::Transform": {
+						"Position": {
+							"x": -0.0002,
+							"y": 0.022600000000000003,
+							"z": 0.0334
+						}
+					},
+					"gs::core::Object": {
+						"Geometry": "export/screen_glass.geo"
+					}
+				}
+			},
+			"Node": {
+				"Uid": 4,
+				"Name": "cart",
+				"Components": {
+					"gs::core::Transform": {
+						"Position": {
+							"x": 0.0002,
+							"y": -0.0035,
+							"z": 0.038200000000000008
+						}
+					},
+					"gs::core::Object": {
+						"Geometry": "export/cart.geo"
+					}
+				}
+			},
+			"Node": {
+				"Uid": 5,
+				"Name": "button_cross",
+				"Components": {
+					"gs::core::Transform": {
+						"Position": {
+							"x": -0.0268,
+							"y": 0.0221,
+							"z": -0.0268
+						}
+					},
+					"gs::core::Object": {
+						"Geometry": "export/button_cross.geo"
+					}
+				}
+			},
+			"Node": {
+				"Uid": 6,
+				"Name": "button_a",
+				"Components": {
+					"gs::core::Transform": {
+						"Position": {
+							"x": 0.032600000000000007,
+							"y": 0.0227,
+							"z": -0.021400000000000004
+						}
+					},
+					"gs::core::Object": {
+						"Geometry": "export/button_a.geo"
+					}
+				}
+			},
+			"Node": {
+				"Uid": 7,
+				"Name": "button_b",
+				"Components": {
+					"gs::core::Transform": {
+						"Position": {
+							"x": 0.0182,
+							"y": 0.0227,
+							"z": -0.0286
+						}
+					},
+					"gs::core::Object": {
+						"Geometry": "export/button_b.geo"
+					}
+				}
+			},
+			"Node": {
+				"Uid": 8,
+				"Name": "button_select",
+				"Components": {
+					"gs::core::Transform": {
+						"Position": {
+							"x": -0.0126,
+							"y": 0.0224,
+							"z": -0.048100000000000007
+						}
+					},
+					"gs::core::Object": {
+						"Geometry": "export/button_select.geo"
+					}
+				}
+			},
+			"Node": {
+				"Uid": 9,
+				"Name": "button_start",
+				"Components": {
+					"gs::core::Transform": {
+						"Position": {
+							"x": 0.0026000000000000005,
+							"y": 0.0224,
+							"z": -0.048100000000000007
+						}
+					},
+					"gs::core::Object": {
+						"Geometry": "export/button_start.geo"
+					}
+				}
+			},
+			"Node": {
+				"Uid": 10,
+				"Name": "ground",
+				"Components": {
+					"gs::core::Transform": {
+						"Rotation": {
+							"x": 0.0,
+							"y": 0.0,
+							"z": 0.0
+						}
+					},
+					"gs::core::Object": {
+						"Geometry": "export/ground.geo"
+					}
+				}
+			},
+			"Node": {
+				"Uid": 11,
+				"Name": "Spot001",
+				"Components": {
+					"gs::core::Transform": {
+						"Position": {
+							"x": 0.0,
+							"y": 0.7028,
+							"z": 0.0
+						},
+						"Rotation": {
+							"x": 0.0,
+							"y": 3.1416,
+							"z": 3.1416
+						}
+					},
+					"gs::core::Light": {
+						"Model": "Spot",
+						"Shadow": "ShadowMap",
+						"ShadowRange": 0.0,
+						"SpecularColor": {
+							"r": 1.0,
+							"g": 1.0,
+							"b": 1.0
+						},
+						"SpecularIntensity": 1.0,
+						"ConeAngle": 0.0699,
+						"EdgeAngle": 0.4783
+					}
+				}
+			},
+			"Node": {
+				"Uid": 12,
+				"Name": "Spot001.Target",
+				"Components": {
+					"gs::core::Transform": {
+						"Position": {
+							"x": 0.0,
+							"y": -0.0145,
+							"z": 0.0
+						},
+						"Rotation": {
+							"x": -1.5707,
+							"y": -1.5707,
+							"z": -3.1415
+						}
+					}
+				}
+			},
+			"Node": {
+				"Uid": 13,
+				"Name": "spawnpoint_0",
+				"Components": {
+					"gs::core::Transform": {
+						"Position": {
+							"x": 0.0,
+							"y": -0.5,
+							"z": 0.0001
+						},
+						"Rotation": {
+							"x": 0.0,
+							"y": 0.0,
+							"z": 0.0
+						}
+					}
+				}
+			}
+		},
+		"NodeHierarchy": {
+			"Link": {
+				"Node": 2,
+				"Parent": 1
+			},
+			"Link": {
+				"Node": 3,
+				"Parent": 1
+			},
+			"Link": {
+				"Node": 4,
+				"Parent": 1
+			},
+			"Link": {
+				"Node": 5,
+				"Parent": 1
+			},
+			"Link": {
+				"Node": 6,
+				"Parent": 1
+			},
+			"Link": {
+				"Node": 7,
+				"Parent": 1
+			},
+			"Link": {
+				"Node": 8,
+				"Parent": 1
+			},
+			"Link": {
+				"Node": 9,
+				"Parent": 1
+			}
+		},
+		"Skeletons": {},
+		"State": {}
+	}
+}

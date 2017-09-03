@@ -1,0 +1,11 @@
+{
+  "trigger_room": {
+    "object": {
+      "Box001": {
+      "index" : 0,
+      "diffuse_map": ["box_1_texture_1.png", "box_1_texture_2.png", "box_1_texture_3.png", "box_1_texture_4.png"]
+      }
+    },
+    "thumbnail": "thumbnail_room.png"
+  }
+}

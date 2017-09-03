@@ -1,0 +1,45 @@
+{
+	"Material": {
+		"Shader": "@core/surfaces/diffuse_map_self_map.isl",
+		"MaterialValues": {
+			"Value": {
+				"Name": "diffuse_map",
+				"Type": "tex2D",
+				"Value": "export/gb_screen.png",
+				"WrapU": "Repeat",
+				"WrapV": "Repeat",
+				"MinFilter": "Anisotropic",
+				"MagFilter": "Anisotropic"
+			},
+			"Value": {
+				"Name": "self_map",
+				"Type": "tex2D",
+				"Value": "export/gb_screen.png",
+				"WrapU": "Repeat",
+				"WrapV": "Repeat",
+				"MinFilter": "Anisotropic",
+				"MagFilter": "Anisotropic"
+			},
+			"Value": {
+				"Name": "diffuse_color",
+				"Type": "vec4",
+				"Value": "vec4(0.4667, 0.5098, 0.1804, 1.0000)"
+			},
+			"Value": {
+				"Name": "specular_color",
+				"Type": "vec4",
+				"Value": "vec4(0.0000, 0.0000, 0.0000, 1.0000)"
+			},
+			"Value": {
+				"Name": "self_color",
+				"Type": "vec4",
+				"Value": "vec4(0.0627, 0.1333, 0.0549, 1.0000)"
+			},
+			"Value": {
+				"Name": "glossiness",
+				"Type": "float",
+				"Value": "0.016746"
+			}
+		}
+	}
+}

@@ -1,0 +1,54 @@
+{
+	"Material": {
+		"Shader": "@core/surfaces/diffuse_map_specular_map_normal_map.isl",
+		"MaterialValues": {
+			"Value": {
+				"Name": "diffuse_map",
+				"Type": "tex2D",
+				"Value": "export/gb_color.png",
+				"WrapU": "Repeat",
+				"WrapV": "Repeat",
+				"MinFilter": "Anisotropic",
+				"MagFilter": "Anisotropic"
+			},
+			"Value": {
+				"Name": "specular_map",
+				"Type": "tex2D",
+				"Value": "export/gb_specular.png",
+				"WrapU": "Repeat",
+				"WrapV": "Repeat",
+				"MinFilter": "Anisotropic",
+				"MagFilter": "Anisotropic"
+			},
+			"Value": {
+				"Name": "normal_map",
+				"Type": "tex2D",
+				"Value": "export/gb_normal.png",
+				"WrapU": "Repeat",
+				"WrapV": "Repeat",
+				"MinFilter": "Anisotropic",
+				"MagFilter": "Anisotropic"
+			},
+			"Value": {
+				"Name": "diffuse_color",
+				"Type": "vec4",
+				"Value": "vec4(0.5882, 0.5882, 0.5882, 1.0000)"
+			},
+			"Value": {
+				"Name": "specular_color",
+				"Type": "vec4",
+				"Value": "vec4(0.9000, 0.9000, 0.9000, 1.0000)"
+			},
+			"Value": {
+				"Name": "self_color",
+				"Type": "vec4",
+				"Value": "vec4(0.0000, 0.0000, 0.0000, 1.0000)"
+			},
+			"Value": {
+				"Name": "glossiness",
+				"Type": "float",
+				"Value": "0.044194"
+			}
+		}
+	}
+}
