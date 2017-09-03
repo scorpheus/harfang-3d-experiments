@@ -2,11 +2,6 @@
 	"Scene": {
 		"Components": {
 			"gs::core::Environment": {
-				"AmbientColor": {
-					"r": 0.11380000000000001,
-					"g": 0.07060000000000001,
-					"b": 0.11380000000000001
-				},
 				"FogColor": {
 					"r": 1.0,
 					"g": 1.0,

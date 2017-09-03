@@ -1,11 +1,20 @@
 {
 	"Material": {
-		"Shader": "@core/surfaces/diffuse_map_specular_map_normal_map.isl",
+		"Shader": "assets/gold.isl",
 		"MaterialValues": {
 			"Value": {
 				"Name": "diffuse_map",
 				"Type": "tex2D",
-				"Value": "export/Maneki_Neko_Paw_Composite.png",
+				"Value": "export/Maneki_Neko_Paw_Left_Gold_Diffuse.png",
+				"WrapU": "Repeat",
+				"WrapV": "Repeat",
+				"MinFilter": "Anisotropic",
+				"MagFilter": "Anisotropic"
+			},
+			"Value": {
+				"Name": "self_map",
+				"Type": "tex2D",
+				"Value": "export/Maneki_Neko_Paw_Left_Gold_IOR.png",
 				"WrapU": "Repeat",
 				"WrapV": "Repeat",
 				"MinFilter": "Anisotropic",
@@ -21,13 +30,11 @@
 				"MagFilter": "Anisotropic"
 			},
 			"Value": {
-				"Name": "normal_map",
+				"Name": "bump_map",
 				"Type": "tex2D",
 				"Value": "export/Maneki_Neko_Paw_Left_Normal.png",
 				"WrapU": "Repeat",
-				"WrapV": "Repeat",
-				"MinFilter": "Anisotropic",
-				"MagFilter": "Anisotropic"
+				"WrapV": "Repeat"
 			},
 			"Value": {
 				"Name": "diffuse_color",
@@ -48,6 +55,11 @@
 				"Name": "glossiness",
 				"Type": "float",
 				"Value": "0.500000"
+			},
+			"Value": {
+				"Name": "env_map",
+				"Type": "tex2D",
+				"Value": "assets/light_studio.hdr"
 			}
 		}
 	}

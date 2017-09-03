@@ -72,6 +72,14 @@ function FinalizeMaterial(mat, name, geo_name)
     	value:SetPath("assets/cubic_envmap_default.dds")
     end  
 
+    if string.ends(name, "_GOLD") then
+	    print("Updating shader _GOLD")
+	    mat:SetShader("assets/gold.isl")
+
+    	local value = mat:AddValue("env_map", gs.ShaderTexture2D )
+    	value:SetPath("assets/light_studio.hdr")	    
+	end
+
 	-- force anisotropic
 	values = {"diffuse_map", "specular_map", "normal_map", "opacity_map", "self_map", "light_map", "ao_map"}
 	for n=1, #values do
