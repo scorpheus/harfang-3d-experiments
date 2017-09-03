@@ -1,0 +1,165 @@
+{
+	"Scene": {
+		"Components": {
+			"gs::core::Environment": {
+				"AmbientColor": {
+					"r": 0.11380000000000001,
+					"g": 0.07060000000000001,
+					"b": 0.11380000000000001
+				},
+				"FogColor": {
+					"r": 1.0,
+					"g": 1.0,
+					"b": 1.0
+				}
+			}
+		},
+		"Nodes": {
+			"Node": {
+				"Uid": 1,
+				"Name": "Maneki_Neko_Paw_Left",
+				"Components": {
+					"gs::core::Transform": {
+						"Rotation": {
+							"x": 0.0,
+							"y": 0.0,
+							"z": 0.0
+						},
+						"Scale": {
+							"x": 1.9288,
+							"y": 1.9288,
+							"z": 1.9288
+						}
+					},
+					"gs::core::Object": {
+						"Geometry": "export/Maneki_Neko_Paw_Left.geo"
+					}
+				}
+			},
+			"Node": {
+				"Uid": 2,
+				"Name": "cyclo",
+				"Components": {
+					"gs::core::Transform": {
+						"Rotation": {
+							"x": 0.0,
+							"y": 0.0,
+							"z": 0.0
+						}
+					},
+					"gs::core::Object": {
+						"Geometry": "export/cyclo.geo"
+					}
+				}
+			},
+			"Node": {
+				"Uid": 3,
+				"Name": "spawnpoint_0",
+				"Components": {
+					"gs::core::Transform": {
+						"Position": {
+							"x": 0.0,
+							"y": 0.0,
+							"z": -10.0
+						},
+						"Rotation": {
+							"x": 0.0,
+							"y": 0.0,
+							"z": 0.0
+						}
+					}
+				}
+			},
+			"Node": {
+				"Uid": 4,
+				"Name": "spot_handle",
+				"Components": {
+					"gs::core::Transform": {
+						"Position": {
+							"x": 0.0,
+							"y": 7.8009,
+							"z": -1.0045
+						},
+						"Rotation": {
+							"x": -0.09680000000000001,
+							"y": 0.0,
+							"z": 0.0
+						}
+					}
+				}
+			},
+			"Node": {
+				"Uid": 5,
+				"Name": "Fspot001",
+				"Components": {
+					"gs::core::Transform": {
+						"Rotation": {
+							"x": 1.5708,
+							"y": 3.1416,
+							"z": 3.1416
+						}
+					},
+					"gs::core::Light": {
+						"Model": "Spot",
+						"Shadow": "ShadowMap",
+						"ShadowRange": 0.0,
+						"Range": 11.0501,
+						"SpecularColor": {
+							"r": 1.0,
+							"g": 1.0,
+							"b": 1.0
+						},
+						"DiffuseIntensity": 5.0,
+						"SpecularIntensity": 1.0,
+						"ConeAngle": 0.0978,
+						"EdgeAngle": 0.2863
+					}
+				}
+			},
+			"Node": {
+				"Uid": 6,
+				"Name": "bounce_light",
+				"Components": {
+					"gs::core::Transform": {
+						"Position": {
+							"x": 0.0603,
+							"y": -0.41000000000000005,
+							"z": -8.6494
+						},
+						"Rotation": {
+							"x": -1.5707,
+							"y": 3.1416,
+							"z": 3.1416
+						}
+					},
+					"gs::core::Light": {
+						"ShadowRange": 0.0,
+						"Range": 10.0296,
+						"DiffuseColor": {
+							"r": 0.3922,
+							"g": 0.45890000000000005,
+							"b": 0.6667000000000001
+						},
+						"SpecularColor": {
+							"r": 0.3922,
+							"g": 0.45890000000000005,
+							"b": 0.6667000000000001
+						},
+						"DiffuseIntensity": 10.0,
+						"SpecularIntensity": 1.0,
+						"ConeAngle": 0.0,
+						"EdgeAngle": 0.7854
+					}
+				}
+			}
+		},
+		"NodeHierarchy": {
+			"Link": {
+				"Node": 5,
+				"Parent": 4
+			}
+		},
+		"Skeletons": {},
+		"State": {}
+	}
+}

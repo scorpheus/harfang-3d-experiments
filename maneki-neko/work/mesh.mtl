@@ -1,0 +1,19 @@
+# 3ds Max Wavefront OBJ Exporter v0.97b - (c)2007 guruware
+# File Created: 03.09.2017 13:29:05
+
+newmtl Gold
+	Ns 100.000000000000
+	Ni 1.600000023842
+	d 1.000000000000
+	Tr 0.000000000000
+	Tf 1.000000000000 1.000000000000 1.000000000000 
+	illum 2
+	Ka 0.587999999523 0.587999999523 0.587999999523
+	Kd 0.500000000000 0.500000000000 0.500000000000
+	Ks 4.500000000000 4.500000000000 4.500000000000
+	Ke 0.000000000000 0.000000000000 0.000000000000
+	map_Ka Maneki_Neko_Paw_Left_Gold_Diffuse.png
+	map_Kd Maneki_Neko_Paw_Left_Gold_Diffuse.png
+	map_Ks Maneki_Neko_Paw_Left_Gold_Refl.png
+	map_bump Map__2_Normal_Bump.tga
+	map_refl Mask_Mask.tga
