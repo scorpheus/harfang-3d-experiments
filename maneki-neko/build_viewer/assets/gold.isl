@@ -29,8 +29,14 @@ variant {
 
 		    vec3 ambiant_color = vec3(0.25, 0.0, 0.15);
 
-			vec3 e = vec3(0.0, 0.0, 1.0); // p - vViewPosition.xyz;
+			vec3 e = p - vViewPosition.xyz;
 			vec3 v = normalize(reflect(e, normalize(n)));
+			vec2 uv_n;
+			if(v.z > 0)
+				uv_n = (v.xy / (2.0*(1.0 + v.z))) + 0.5;
+			else
+				uv_n = (v.xy / (2.0*(1.0 - v.z))) + 0.5;
+				
 
 			// ----
 			// vec4 env_color = texture2D(env_map, v.xy * vec2(1,1));
@@ -53,7 +59,7 @@ variant {
 			vec2 vN = v.xy / m + .5;
 			vN.y = 1.0 - vN.y;
 
-			vec4 env_color = texture2D(env_map, vN);
+			vec4 env_color = texture2D(env_map, vec2(uv_n.x, 1.0-uv_n.y));
 
 			vec3 base_color = texture2D(diffuse_map, v_uv0).xyz;
 			vec3 refl_color = texture2D(specular_map, v_uv0).xyz;
