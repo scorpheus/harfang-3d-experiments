@@ -1,0 +1,45 @@
+{
+	"Material": {
+		"Shader": "assets/alpha_shadow.isl",
+		"MaterialValues": {
+			"Value": {
+				"Name": "diffuse_map",
+				"Type": "tex2D",
+				"Value": "export/ground_AO.png",
+				"WrapU": "Repeat",
+				"WrapV": "Repeat",
+				"MinFilter": "Anisotropic",
+				"MagFilter": "Anisotropic"
+			},
+			"Value": {
+				"Name": "opacity_map",
+				"Type": "tex2D",
+				"Value": "export/ground_AO.png",
+				"WrapU": "Repeat",
+				"WrapV": "Repeat",
+				"MinFilter": "Anisotropic",
+				"MagFilter": "Anisotropic"
+			},
+			"Value": {
+				"Name": "diffuse_color",
+				"Type": "vec4",
+				"Value": "vec4(0.5880, 0.5880, 0.5880, 1.0000)"
+			},
+			"Value": {
+				"Name": "specular_color",
+				"Type": "vec4",
+				"Value": "vec4(0.0000, 0.0000, 0.0000, 1.0000)"
+			},
+			"Value": {
+				"Name": "self_color",
+				"Type": "vec4",
+				"Value": "vec4(0.0000, 0.0000, 0.0000, 1.0000)"
+			},
+			"Value": {
+				"Name": "glossiness",
+				"Type": "float",
+				"Value": "0.031250"
+			}
+		}
+	}
+}

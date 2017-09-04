@@ -15,7 +15,7 @@
 			"Value": {
 				"Name": "self_color",
 				"Type": "vec4",
-				"Value": "vec4(0.0000, 0.0000, 0.0000, 1.0000)"
+				"Value": "vec4(0.0784, 0.1294, 0.1765, 1.0000)"
 			},
 			"Value": {
 				"Name": "glossiness",

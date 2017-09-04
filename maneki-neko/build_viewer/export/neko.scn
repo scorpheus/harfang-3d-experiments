@@ -33,6 +33,27 @@
 			},
 			"Node": {
 				"Uid": 2,
+				"Name": "plane_occ_shadow",
+				"Components": {
+					"gs::core::Transform": {
+						"Position": {
+							"x": 0.0,
+							"y": 0.009000000000000001,
+							"z": 0.0001
+						},
+						"Scale": {
+							"x": 0.5185000000000001,
+							"y": 0.5185000000000001,
+							"z": 0.5185000000000001
+						}
+					},
+					"gs::core::Object": {
+						"Geometry": "export/plane_occ_shadow.geo"
+					}
+				}
+			},
+			"Node": {
+				"Uid": 3,
 				"Name": "cyclo",
 				"Components": {
 					"gs::core::Transform": {
@@ -48,7 +69,7 @@
 				}
 			},
 			"Node": {
-				"Uid": 3,
+				"Uid": 4,
 				"Name": "spawnpoint_0",
 				"Components": {
 					"gs::core::Transform": {
@@ -66,7 +87,7 @@
 				}
 			},
 			"Node": {
-				"Uid": 4,
+				"Uid": 5,
 				"Name": "spot_handle",
 				"Components": {
 					"gs::core::Transform": {
@@ -84,7 +105,7 @@
 				}
 			},
 			"Node": {
-				"Uid": 5,
+				"Uid": 6,
 				"Name": "Fspot001",
 				"Components": {
 					"gs::core::Transform": {
@@ -112,7 +133,7 @@
 				}
 			},
 			"Node": {
-				"Uid": 6,
+				"Uid": 7,
 				"Name": "bounce_light",
 				"Components": {
 					"gs::core::Transform": {
@@ -150,8 +171,12 @@
 		},
 		"NodeHierarchy": {
 			"Link": {
-				"Node": 5,
-				"Parent": 4
+				"Node": 2,
+				"Parent": 1
+			},
+			"Link": {
+				"Node": 6,
+				"Parent": 5
 			}
 		},
 		"Skeletons": {},
